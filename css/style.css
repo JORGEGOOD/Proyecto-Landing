@@ -1,0 +1,45 @@
+.custom-section {
+    padding: 3em 1em; 
+    text-align: center;
+}
+
+.imagen1 {
+    width: 50%; 
+    text-align: right;
+    margin: 0 auto; 
+    display: block;
+}
+
+.hero .d-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width: 992px) {
+    .imagen1 {
+        width: 70%; 
+    }
+
+    .hero .d-flex {
+        flex-direction: column; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .imagen1 {
+        width: 90%; 
+    }
+
+    .custom-section {
+        padding: 2em 0.5em; 
+    }
+
+    .hero .d-flex {
+        flex-direction: column; 
+        gap: 1em; 
+    }
+}
